@@ -27,17 +27,16 @@ document.addEventListener("DOMContentLoaded", function () {
     };
 
     fetch(scriptURL, {
-      method: "POST",
-      mode: "no-cors",
-      body: JSON.stringify(data)
-    })
-    .then(() => {
-      alert("Submitted Successfully ✅");
-      form.reset();
-    })
-    .catch(() => {
-      alert("Error submitting form ❌");
-    });
+  method: "POST",
+  mode: "no-cors",
+  body: JSON.stringify(data)
+})
+.then(() => {
+  window.location.href = "success.html";   // ✅ redirect
+})
+.catch(() => {
+  alert("Error submitting form ❌");
+});
 
   });
 
