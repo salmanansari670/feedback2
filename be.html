@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>BE Feedback Form</title>
+</head>
+
+<body>
+
+<h2>Student Feedback (BE)</h2>
+
+<form id="form">
+
+<input type="text" id="name" placeholder="Student Name" required><br><br>
+<input type="text" id="roll" placeholder="Roll Number" required><br><br>
+
+<!-- Auto year -->
+<input type="hidden" id="year" value="BE">
+
+<!-- Subjects -->
+<select id="subject" required>
+<option value="">Select Subject</option>
+<option>ROBOTICS-Prof. Muslim Rangwala</option>
+<option>NLP-Dr. Riyaz Pathan</option>
+<option>SS-Prof. Ismaeel Shaikh</option>
+<option>PM-Prof. Abdul Majid Ansari</option>
+<option>EVM-Prof. Mohsin Khan</option>
+<option>ROBO L-Prof. Bndanawaz Kotiyal</option>
+<option>NLP L-Dr.Riyaz Pathan</option>
+</select>
+
+<br><br>
+
+<table border="1">
+
+<tr>
+<th>Question</th>
+<th>1</th>
+<th>2</th>
+<th>3</th>
+<th>4</th>
+<th>5</th>
+</tr>
+
+<!-- Q1 -->
+<tr>
+<td>1. Audibility, Confidence and Gestures of Teacher</td>
+<td><input type="radio" name="q1" value="1" required></td>
+<td><input type="radio" name="q1" value="2"></td>
+<td><input type="radio" name="q1" value="3"></td>
+<td><input type="radio" name="q1" value="4"></td>
+<td><input type="radio" name="q1" value="5"></td>
+</tr>
+
+<!-- Q2 -->
+<tr>
+<td>2. Ability to control session and maintain discipline</td>
+<td><input type="radio" name="q2" value="1" required></td>
+<td><input type="radio" name="q2" value="2"></td>
+<td><input type="radio" name="q2" value="3"></td>
+<td><input type="radio" name="q2" value="4"></td>
+<td><input type="radio" name="q2" value="5"></td>
+</tr>
+
+<!-- Q3 -->
+<tr>
+<td>3. Timely completion of Lecture</td>
+<td><input type="radio" name="q3" value="1" required></td>
+<td><input type="radio" name="q3" value="2"></td>
+<td><input type="radio" name="q3" value="3"></td>
+<td><input type="radio" name="q3" value="4"></td>
+<td><input type="radio" name="q3" value="5"></td>
+</tr>
+
+<!-- Q4 -->
+<tr>
+<td>4. Timely checking Assignment</td>
+<td><input type="radio" name="q4" value="1" required></td>
+<td><input type="radio" name="q4" value="2"></td>
+<td><input type="radio" name="q4" value="3"></td>
+<td><input type="radio" name="q4" value="4"></td>
+<td><input type="radio" name="q4" value="5"></td>
+</tr>
+
+<!-- Q5 -->
+<tr>
+<td>5. Teaching topics with clarity</td>
+<td><input type="radio" name="q5" value="1" required></td>
+<td><input type="radio" name="q5" value="2"></td>
+<td><input type="radio" name="q5" value="3"></td>
+<td><input type="radio" name="q5" value="4"></td>
+<td><input type="radio" name="q5" value="5"></td>
+</tr>
+
+<!-- Q6 -->
+<tr>
+<td>6. Teaching/practical plan shared and followed</td>
+<td><input type="radio" name="q6" value="1" required></td>
+<td><input type="radio" name="q6" value="2"></td>
+<td><input type="radio" name="q6" value="3"></td>
+<td><input type="radio" name="q6" value="4"></td>
+<td><input type="radio" name="q6" value="5"></td>
+</tr>
+
+<!-- Q7 -->
+<tr>
+<td>7. Encourages questions and discussion</td>
+<td><input type="radio" name="q7" value="1" required></td>
+<td><input type="radio" name="q7" value="2"></td>
+<td><input type="radio" name="q7" value="3"></td>
+<td><input type="radio" name="q7" value="4"></td>
+<td><input type="radio" name="q7" value="5"></td>
+</tr>
+
+<!-- Q8 -->
+<tr>
+<td>8. Help for exam-oriented discussion</td>
+<td><input type="radio" name="q8" value="1" required></td>
+<td><input type="radio" name="q8" value="2"></td>
+<td><input type="radio" name="q8" value="3"></td>
+<td><input type="radio" name="q8" value="4"></td>
+<td><input type="radio" name="q8" value="5"></td>
+</tr>
+
+<!-- Q9 -->
+<tr>
+<td>9. Use of innovative methods/tools</td>
+<td><input type="radio" name="q9" value="1" required></td>
+<td><input type="radio" name="q9" value="2"></td>
+<td><input type="radio" name="q9" value="3"></td>
+<td><input type="radio" name="q9" value="4"></td>
+<td><input type="radio" name="q9" value="5"></td>
+</tr>
+
+<!-- Q10 -->
+<tr>
+<td>10. Invest maximum time for useful content</td>
+<td><input type="radio" name="q10" value="1" required></td>
+<td><input type="radio" name="q10" value="2"></td>
+<td><input type="radio" name="q10" value="3"></td>
+<td><input type="radio" name="q10" value="4"></td>
+<td><input type="radio" name="q10" value="5"></td>
+</tr>
+
+</table>
+
+<br>
+
+<label><b>11. Suggestions for Improvement:</b></label><br>
+<textarea id="q11" rows="4" style="width:100%;"></textarea>
+
+<br><br>
+<button type="submit">Submit</button>
+
+</form>
+
+<script src="script.js"></script>
+
+</body>
+</html>
