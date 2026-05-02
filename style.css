@@ -1,0 +1,119 @@
+/* ===== Page Styling ===== */
+body {
+  font-family: Arial, sans-serif;
+  background: #f4f7fb;
+  margin: 0;
+  padding: 20px;
+}
+
+/* ===== Main Form Container ===== */
+form {
+  max-width: 950px;
+  margin: auto;
+  background: #ffffff;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+}
+
+/* ===== Heading ===== */
+h2 {
+  text-align: center;
+  color: #1d3557;
+  margin-bottom: 20px;
+}
+
+/* ===== Inputs & Dropdowns ===== */
+input[type="text"],
+select,
+textarea {
+  width: 100%;
+  padding: 12px;
+  margin-top: 6px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 15px;
+  box-sizing: border-box;
+}
+
+input[type="text"]:focus,
+select:focus,
+textarea:focus {
+  border-color: #457b9d;
+  outline: none;
+  box-shadow: 0 0 5px rgba(69,123,157,0.3);
+}
+
+/* ===== Table Styling ===== */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+  overflow-x: auto;
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: center;
+  font-size: 14px;
+}
+
+th {
+  background: #457b9d;
+  color: white;
+}
+
+td:first-child {
+  text-align: left;
+  font-weight: 500;
+}
+
+/* ===== Radio Buttons ===== */
+input[type="radio"] {
+  transform: scale(1.2);
+  cursor: pointer;
+}
+
+/* ===== Textarea ===== */
+textarea {
+  resize: vertical;
+  min-height: 90px;
+}
+
+/* ===== Submit Button ===== */
+button {
+  width: 100%;
+  padding: 14px;
+  background: #2a9d8f;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 17px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #21867a;
+}
+
+/* ===== Mobile Responsive ===== */
+@media (max-width: 768px) {
+  form {
+    padding: 15px;
+  }
+
+  table {
+    font-size: 12px;
+  }
+
+  th, td {
+    padding: 6px;
+  }
+
+  button {
+    font-size: 15px;
+  }
+}
