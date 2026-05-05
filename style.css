@@ -130,3 +130,12 @@ button:hover {
   font-size: 15px;
   font-weight: bold;
 }
+.rating-info {
+  background: #e7f3ff;
+  color: #0c5460;
+  padding: 10px;
+  border-left: 5px solid #007bff;
+  border-radius: 6px;
+  margin-bottom: 15px;
+  font-size: 14px;
+  }
