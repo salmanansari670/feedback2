@@ -1,158 +1,178 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>TE Feedback Form</title>
+<title>Student Feedback Form</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="css/style.css">
+
 </head>
 
 <body>
 
-<h2>Student Feedback (TE)</h2>
+<h2>Student Feedback Form</h2>
 
 <form id="form">
 
-<input type="text" id="name" placeholder="Student Name" required><br><br>
-<input type="text" id="roll" placeholder="Roll Number" required><br><br>
+<!-- Student Details -->
+<input type="text" id="name" placeholder="Student Name" required>
 
-<!-- Auto year -->
-<input type="hidden" id="year" value="TE">
+<input type="text" id="roll" placeholder="Roll Number" required>
 
-<!-- Subjects -->
+<input type="hidden" id="year" value="TY">
+
+<!-- Subject -->
 <select id="subject" required>
 <option value="">Select Subject</option>
-<option>ERTOS-Prof.Shahin A</option>
+<option>DBMS-Prof.Gnanasekaran</option>
+<option>MPMC-Prof.Shahin A.</option>
 <option>AI-Prof. Shagufta Baseer</option>
 <option>CN-Prof. Ismaeel Shaikh</option>
 <option>DWM-Prof. Gnanasekaran</option>
-<option>ML-Dr. Geeta Desai</option>
-<option>ERTOS L-Prof. Shahin A</option>
-<option>AIL-Prof.Ismaeel Shaikh</option>
-<option>CNL-Mr.Salman Ansari</option>
-<option>DWM L - Prof. Gnanasekaran</option>
-<option>SKILL LAB-Mr. Imran Shaikh</option>
 </select>
 
-<br><br>
+<!-- Notes -->
+<p class="note">
+Please select each subject one by one and submit feedback for all subjects.
+</p>
 
-<table border="1">
-
-<tr>
-<th>Question</th>
-<th>1</th>
-<th>2</th>
-<th>3</th>
-<th>4</th>
-<th>5</th>
-</tr>
 
 <!-- Q1 -->
-<tr>
-<td>1. Audibility, Confidence and Gestures of Teacher</td>
-<td><input type="radio" name="q1" value="1" required></td>
-<td><input type="radio" name="q1" value="2"></td>
-<td><input type="radio" name="q1" value="3"></td>
-<td><input type="radio" name="q1" value="4"></td>
-<td><input type="radio" name="q1" value="5"></td>
-</tr>
+<div class="question-box">
+<p class="question">1. Audibility, Confidence and Gestures of Teacher</p>
+
+<div class="options">
+<label><input type="radio" name="q1" value="1" required>Improvement Expected</label>
+<label><input type="radio" name="q1" value="2">Average</label>
+<label><input type="radio" name="q1" value="3">Good</label>
+<label><input type="radio" name="q1" value="4">Very Good</label>
+<label><input type="radio" name="q1" value="5">Excellent</label>
+</div>
+</div>
 
 <!-- Q2 -->
-<tr>
-<td>2. Ability to control session and maintain discipline</td>
-<td><input type="radio" name="q2" value="1" required></td>
-<td><input type="radio" name="q2" value="2"></td>
-<td><input type="radio" name="q2" value="3"></td>
-<td><input type="radio" name="q2" value="4"></td>
-<td><input type="radio" name="q2" value="5"></td>
-</tr>
+<div class="question-box">
+<p class="question">2. Ability to control session and maintain discipline</p>
+
+<div class="options">
+<label><input type="radio" name="q2" value="1" required>Improvement Expected</label>
+<label><input type="radio" name="q2" value="2">Average</label>
+<label><input type="radio" name="q2" value="3">Good</label>
+<label><input type="radio" name="q2" value="4">Very Good</label>
+<label><input type="radio" name="q2" value="5">Excellent</label>
+</div>
+</div>
 
 <!-- Q3 -->
-<tr>
-<td>3. Timely completion of Lecture</td>
-<td><input type="radio" name="q3" value="1" required></td>
-<td><input type="radio" name="q3" value="2"></td>
-<td><input type="radio" name="q3" value="3"></td>
-<td><input type="radio" name="q3" value="4"></td>
-<td><input type="radio" name="q3" value="5"></td>
-</tr>
+<div class="question-box">
+<p class="question">3. Timely completion of Lecture</p>
+
+<div class="options">
+<label><input type="radio" name="q3" value="1" required>Improvement Expected</label>
+<label><input type="radio" name="q3" value="2">Average</label>
+<label><input type="radio" name="q3" value="3">Good</label>
+<label><input type="radio" name="q3" value="4">Very Good</label>
+<label><input type="radio" name="q3" value="5">Excellent</label>
+</div>
+</div>
 
 <!-- Q4 -->
-<tr>
-<td>4. Timely checking Assignment</td>
-<td><input type="radio" name="q4" value="1" required></td>
-<td><input type="radio" name="q4" value="2"></td>
-<td><input type="radio" name="q4" value="3"></td>
-<td><input type="radio" name="q4" value="4"></td>
-<td><input type="radio" name="q4" value="5"></td>
-</tr>
+<div class="question-box">
+<p class="question">4. Timely checking Assignment</p>
+
+<div class="options">
+<label><input type="radio" name="q4" value="1" required>Improvement Expected</label>
+<label><input type="radio" name="q4" value="2">Average</label>
+<label><input type="radio" name="q4" value="3">Good</label>
+<label><input type="radio" name="q4" value="4">Very Good</label>
+<label><input type="radio" name="q4" value="5">Excellent</label>
+</div>
+</div>
 
 <!-- Q5 -->
-<tr>
-<td>5. Teaching topics with clarity</td>
-<td><input type="radio" name="q5" value="1" required></td>
-<td><input type="radio" name="q5" value="2"></td>
-<td><input type="radio" name="q5" value="3"></td>
-<td><input type="radio" name="q5" value="4"></td>
-<td><input type="radio" name="q5" value="5"></td>
-</tr>
+<div class="question-box">
+<p class="question">5. Teaching topics with clarity</p>
+
+<div class="options">
+<label><input type="radio" name="q5" value="1" required>Improvement Expected</label>
+<label><input type="radio" name="q5" value="2">Average</label>
+<label><input type="radio" name="q5" value="3">Good</label>
+<label><input type="radio" name="q5" value="4">Very Good</label>
+<label><input type="radio" name="q5" value="5">Excellent</label>
+</div>
+</div>
 
 <!-- Q6 -->
-<tr>
-<td>6. Teaching/practical plan shared and followed</td>
-<td><input type="radio" name="q6" value="1" required></td>
-<td><input type="radio" name="q6" value="2"></td>
-<td><input type="radio" name="q6" value="3"></td>
-<td><input type="radio" name="q6" value="4"></td>
-<td><input type="radio" name="q6" value="5"></td>
-</tr>
+<div class="question-box">
+<p class="question">6. Teaching/practical plan shared and followed</p>
+
+<div class="options">
+<label><input type="radio" name="q6" value="1" required>Improvement Expected</label>
+<label><input type="radio" name="q6" value="2">Average</label>
+<label><input type="radio" name="q6" value="3">Good</label>
+<label><input type="radio" name="q6" value="4">Very Good</label>
+<label><input type="radio" name="q6" value="5">Excellent</label>
+</div>
+</div>
 
 <!-- Q7 -->
-<tr>
-<td>7. Encourages questions and discussion</td>
-<td><input type="radio" name="q7" value="1" required></td>
-<td><input type="radio" name="q7" value="2"></td>
-<td><input type="radio" name="q7" value="3"></td>
-<td><input type="radio" name="q7" value="4"></td>
-<td><input type="radio" name="q7" value="5"></td>
-</tr>
+<div class="question-box">
+<p class="question">7. Encourages questions and discussion</p>
+
+<div class="options">
+<label><input type="radio" name="q7" value="1" required>Improvement Expected</label>
+<label><input type="radio" name="q7" value="2">Average</label>
+<label><input type="radio" name="q7" value="3">Good</label>
+<label><input type="radio" name="q7" value="4">Very Good</label>
+<label><input type="radio" name="q7" value="5">Excellent</label>
+</div>
+</div>
 
 <!-- Q8 -->
-<tr>
-<td>8. Help for exam-oriented discussion</td>
-<td><input type="radio" name="q8" value="1" required></td>
-<td><input type="radio" name="q8" value="2"></td>
-<td><input type="radio" name="q8" value="3"></td>
-<td><input type="radio" name="q8" value="4"></td>
-<td><input type="radio" name="q8" value="5"></td>
-</tr>
+<div class="question-box">
+<p class="question">8. Help for exam-oriented discussion</p>
+
+<div class="options">
+<label><input type="radio" name="q8" value="1" required>Improvement Expected</label>
+<label><input type="radio" name="q8" value="2">Average</label>
+<label><input type="radio" name="q8" value="3">Good</label>
+<label><input type="radio" name="q8" value="4">Very Good</label>
+<label><input type="radio" name="q8" value="5">Excellent</label>
+</div>
+</div>
 
 <!-- Q9 -->
-<tr>
-<td>9. Use of innovative methods/tools</td>
-<td><input type="radio" name="q9" value="1" required></td>
-<td><input type="radio" name="q9" value="2"></td>
-<td><input type="radio" name="q9" value="3"></td>
-<td><input type="radio" name="q9" value="4"></td>
-<td><input type="radio" name="q9" value="5"></td>
-</tr>
+<div class="question-box">
+<p class="question">9. Use of innovative methods/tools</p>
+
+<div class="options">
+<label><input type="radio" name="q9" value="1" required>Improvement Expected</label>
+<label><input type="radio" name="q9" value="2">Average</label>
+<label><input type="radio" name="q9" value="3">Good</label>
+<label><input type="radio" name="q9" value="4">Very Good</label>
+<label><input type="radio" name="q9" value="5">Excellent</label>
+</div>
+</div>
 
 <!-- Q10 -->
-<tr>
-<td>10. Invest maximum time for useful content</td>
-<td><input type="radio" name="q10" value="1" required></td>
-<td><input type="radio" name="q10" value="2"></td>
-<td><input type="radio" name="q10" value="3"></td>
-<td><input type="radio" name="q10" value="4"></td>
-<td><input type="radio" name="q10" value="5"></td>
-</tr>
+<div class="question-box">
+<p class="question">10. Invest maximum time for useful content</p>
 
-</table>
+<div class="options">
+<label><input type="radio" name="q10" value="1" required>Improvement Expected</label>
+<label><input type="radio" name="q10" value="2">Average</label>
+<label><input type="radio" name="q10" value="3">Good</label>
+<label><input type="radio" name="q10" value="4">Very Good</label>
+<label><input type="radio" name="q10" value="5">Excellent</label>
+</div>
+</div>
 
-<br>
+<!-- Suggestion -->
+<label><b>Suggestions for Improvement:</b></label>
 
-<label><b>11. Suggestions for Improvement:</b></label><br>
-<textarea id="q11" rows="4" style="width:100%;"></textarea>
+<textarea id="q11" rows="4"></textarea>
 
-<br><br>
-<button type="submit">Submit</button>
+<button type="submit">Submit Feedback</button>
 
 </form>
 
