@@ -44,7 +44,7 @@ const subjects = {
         teacher: "Prof. Sheeba Naaz"
     },
      SM: {
-        name: "edc",
+        name: "SM",
         teacher: "Prof. Ataul Mustafa"
     },
 
