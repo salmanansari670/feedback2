@@ -1,185 +1,112 @@
 <!DOCTYPE html>
-<html>
-<head>
-<title>Student Feedback Form</title>
+<html lang="en">
 
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="style.css">
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>SE Student Feedback</title>
+
+    <link rel="stylesheet"
+          href="css/style.css">
 
 </head>
 
+
 <body>
 
-<h2>Student Feedback Form</h2>
+<div class="container">
 
-<form id="form">
-
-<!-- Student Details -->
-<input type="text" id="name" placeholder="Student Name" required>
-
-<input type="text" id="roll" placeholder="Roll Number" required>
-
-<input type="hidden" id="year" value="SE">
-
-<!-- Subject -->
-<select id="subject" required>
-<option value="">Select Subject</option>
-<option>MDM-I(AIML)-Prof.Saima Sayyed</option>
-  <option>MDM-I(CO)-Prof.Zuhaib Sayyed</option>
-  <option>MDM-I(DS)-Prof.Zuhaib Sayyed</option>
-  <option>MDM-I(EE)-Prof.Sheeba Naaz</option>
-<option>SM-Prof.Ataul Mustafa</option>
-<option>DLCA-Prof.Bandanawaz Kotiyal</option>
-<option>DSA-Prof.Umar Masumdar</option>
-<option>EDC-Prof. Muslim Rangwala</option>
-</select>
-
-<!-- Notes -->
-<p class="note">
-Please select each subject one by one and submit feedback for all subjects.
-</p>
+    <h2>SE Student Feedback Form</h2>
 
 
-<!-- Q1 -->
-<div class="question-box">
-<p class="question">1. Audibility, Confidence and Gestures of Teacher</p>
+    <!-- Student Details -->
 
-<div class="options">
-<label><input type="radio" name="q1" value="1" required>Improvement Expected</label>
-<label><input type="radio" name="q1" value="2">Average</label>
-<label><input type="radio" name="q1" value="3">Good</label>
-<label><input type="radio" name="q1" value="4">Very Good</label>
-<label><input type="radio" name="q1" value="5">Excellent</label>
-</div>
-</div>
+    <div class="student-details">
 
-<!-- Q2 -->
-<div class="question-box">
-<p class="question">2. Ability to control session and maintain discipline</p>
+        <input
+            type="text"
+            id="name"
+            placeholder="Student Name"
+            required
+        >
 
-<div class="options">
-<label><input type="radio" name="q2" value="1" required>Improvement Expected</label>
-<label><input type="radio" name="q2" value="2">Average</label>
-<label><input type="radio" name="q2" value="3">Good</label>
-<label><input type="radio" name="q2" value="4">Very Good</label>
-<label><input type="radio" name="q2" value="5">Excellent</label>
-</div>
-</div>
 
-<!-- Q3 -->
-<div class="question-box">
-<p class="question">3. Timely completion of Lecture</p>
+        <input
+            type="text"
+            id="roll"
+            placeholder="Roll Number"
+            required
+        >
 
-<div class="options">
-<label><input type="radio" name="q3" value="1" required>Improvement Expected</label>
-<label><input type="radio" name="q3" value="2">Average</label>
-<label><input type="radio" name="q3" value="3">Good</label>
-<label><input type="radio" name="q3" value="4">Very Good</label>
-<label><input type="radio" name="q3" value="5">Excellent</label>
-</div>
-</div>
+    </div>
 
-<!-- Q4 -->
-<div class="question-box">
-<p class="question">4. Timely checking Assignment</p>
 
-<div class="options">
-<label><input type="radio" name="q4" value="1" required>Improvement Expected</label>
-<label><input type="radio" name="q4" value="2">Average</label>
-<label><input type="radio" name="q4" value="3">Good</label>
-<label><input type="radio" name="q4" value="4">Very Good</label>
-<label><input type="radio" name="q4" value="5">Excellent</label>
-</div>
-</div>
+    <input
+        type="hidden"
+        id="year"
+        value="SE"
+    >
 
-<!-- Q5 -->
-<div class="question-box">
-<p class="question">5. Teaching topics with clarity</p>
 
-<div class="options">
-<label><input type="radio" name="q5" value="1" required>Improvement Expected</label>
-<label><input type="radio" name="q5" value="2">Average</label>
-<label><input type="radio" name="q5" value="3">Good</label>
-<label><input type="radio" name="q5" value="4">Very Good</label>
-<label><input type="radio" name="q5" value="5">Excellent</label>
-</div>
+    <p class="note">
+
+        Select only the subjects you have.
+        Complete the feedback for the selected subjects
+        and click "Submit All Feedback".
+
+    </p>
+
+
+    <!-- Subject Selection -->
+
+    <div class="subject-selection">
+
+        <h3>Select Your Subjects</h3>
+
+
+        <div id="subjectSelection"></div>
+
+    </div>
+
+
+    <!-- Tabs -->
+
+    <div
+        id="subjectTabs"
+        class="subject-tabs">
+    </div>
+
+
+    <!-- Feedback -->
+
+    <form id="form">
+
+        <div id="subjectContainer"></div>
+
+
+        <div class="submit-area">
+
+            <button
+                type="submit"
+                id="submitButton">
+
+                Submit All Feedback
+
+            </button>
+
+        </div>
+
+    </form>
+
 </div>
 
-<!-- Q6 -->
-<div class="question-box">
-<p class="question">6. Teaching/practical plan shared and followed</p>
 
-<div class="options">
-<label><input type="radio" name="q6" value="1" required>Improvement Expected</label>
-<label><input type="radio" name="q6" value="2">Average</label>
-<label><input type="radio" name="q6" value="3">Good</label>
-<label><input type="radio" name="q6" value="4">Very Good</label>
-<label><input type="radio" name="q6" value="5">Excellent</label>
-</div>
-</div>
-
-<!-- Q7 -->
-<div class="question-box">
-<p class="question">7. Encourages questions and discussion</p>
-
-<div class="options">
-<label><input type="radio" name="q7" value="1" required>Improvement Expected</label>
-<label><input type="radio" name="q7" value="2">Average</label>
-<label><input type="radio" name="q7" value="3">Good</label>
-<label><input type="radio" name="q7" value="4">Very Good</label>
-<label><input type="radio" name="q7" value="5">Excellent</label>
-</div>
-</div>
-
-<!-- Q8 -->
-<div class="question-box">
-<p class="question">8. Help for exam-oriented discussion</p>
-
-<div class="options">
-<label><input type="radio" name="q8" value="1" required>Improvement Expected</label>
-<label><input type="radio" name="q8" value="2">Average</label>
-<label><input type="radio" name="q8" value="3">Good</label>
-<label><input type="radio" name="q8" value="4">Very Good</label>
-<label><input type="radio" name="q8" value="5">Excellent</label>
-</div>
-</div>
-
-<!-- Q9 -->
-<div class="question-box">
-<p class="question">9. Use of innovative methods/tools</p>
-
-<div class="options">
-<label><input type="radio" name="q9" value="1" required>Improvement Expected</label>
-<label><input type="radio" name="q9" value="2">Average</label>
-<label><input type="radio" name="q9" value="3">Good</label>
-<label><input type="radio" name="q9" value="4">Very Good</label>
-<label><input type="radio" name="q9" value="5">Excellent</label>
-</div>
-</div>
-
-<!-- Q10 -->
-<div class="question-box">
-<p class="question">10. Invest maximum time for useful content</p>
-
-<div class="options">
-<label><input type="radio" name="q10" value="1" required>Improvement Expected</label>
-<label><input type="radio" name="q10" value="2">Average</label>
-<label><input type="radio" name="q10" value="3">Good</label>
-<label><input type="radio" name="q10" value="4">Very Good</label>
-<label><input type="radio" name="q10" value="5">Excellent</label>
-</div>
-</div>
-
-<!-- Suggestion -->
-<label><b>Suggestions for Improvement:</b></label>
-
-<textarea id="q11" rows="4"></textarea>
-
-<button type="submit">Submit Feedback</button>
-
-</form>
-
-<script src="script.js"></script>
+<script src="se.js"></script>
 
 </body>
+
 </html>
